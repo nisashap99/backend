@@ -15,7 +15,7 @@ pipeline {
 
     stages {
 
-        stage('Read Version') {
+        stage('Read Version of app') {
             steps {
                 script {
                     def packageJson = readJSON file: 'package.json'
